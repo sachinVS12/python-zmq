@@ -6,7 +6,7 @@ import time
 zmq_port = 5555
 zmq_host = "localhost"
 
-# ---------------- ZMQ SETUP ----------------
+# ---------------- ZMQ SETUP --------------
 context = zmq.Context()
 socket = context.socket(zmq.SUB)
 socket.connect(f"tcp://{zmq_host}:{zmq_port}")
